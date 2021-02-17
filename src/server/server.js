@@ -42,7 +42,7 @@ if (ENV === "development") {
 }
 
 const setResponse = (html, preloadedState, manifest) => {
-  const mainStyles = manifest ? manifest["main.css"] : "assets/app.css";
+  const mainStyles = manifest ? manifest["vendors.css"] : "assets/app.css";
   const mainBuild = manifest ? manifest["main.js"] : "assets/app.js";
   const vendorBuild = manifest ? manifest["vendors.js"] : "assets/vendor.js";
 
