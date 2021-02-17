@@ -1,12 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { createStore, compose } from "redux";
-import { createBrowserHistory } from "history";
-import { Router } from "react-router";
-import reducer from "./reducers";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, compose } from 'redux';
+import { createBrowserHistory } from 'history';
+import { Router } from 'react-router';
+import reducer from './reducers';
 
-import App from "./routes/App";
+import App from './routes/App';
 
 // import initialState from "./initialState";
 
@@ -26,5 +26,5 @@ ReactDOM.hydrate(
       <App />
     </Router>
   </Provider>,
-  document.getElementById("app")
+  document.getElementById('app'),
 );

@@ -1,32 +1,32 @@
-import Home from "../containers/Home";
-import Login from "../containers/Login";
-import Register from "../containers/Register";
-import Player from "../containers/Player";
-import NotFound from "../containers/NotFound";
+import Home from '../containers/Home';
+import Login from '../containers/Login';
+import Register from '../containers/Register';
+import Player from '../containers/Player';
+import NotFound from '../containers/NotFound';
 
 const routes = [
   {
     exact: true,
-    path: "/",
+    path: '/',
     component: Home,
   },
   {
     exact: true,
-    path: "/login",
+    path: '/login',
     component: Login,
   },
   {
     exact: true,
-    path: "/register",
+    path: '/register',
     component: Register,
   },
   {
     exact: true,
-    path: "/player/:id",
+    path: '/player/:id',
     component: Player,
   },
   {
-    name: "NotFound",
+    name: 'NotFound',
     component: NotFound,
   },
 ];
