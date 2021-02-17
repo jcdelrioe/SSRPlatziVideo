@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development --env development",
+    "build": "webpack-cli --config webpack.config.js",
     "start:dev": "nodemon src/server/index"
   },
   "keywords": [],
@@ -18,6 +17,7 @@
     "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "helmet": "^4.4.1",
     "history": "^5.0.0",
     "ignore-styles": "^5.0.1",
     "md5": "^2.3.0",
@@ -33,7 +33,8 @@
     "redux": "^4.0.5",
     "webpack-dev-middleware": "^4.1.0",
     "webpack-dev-server": "^3.11.0",
-    "webpack-hot-middleware": "^2.25.0"
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-manifest-plugin": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -42,6 +43,7 @@
     "@babel/preset-react": "^7.12.7",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
+    "compression-webpack-plugin": "^7.1.2",
     "css-loader": "^5.0.1",
     "eslint": "^7.14.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -49,11 +51,10 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "file-loader": "^5.1.0",
-    "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^1.3.1",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.0",
+    "terser-webpack-plugin": "^5.1.1",
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0"
   }
